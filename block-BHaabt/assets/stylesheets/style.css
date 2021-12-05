@@ -1,0 +1,327 @@
+ /* /* css reset code starts here  */
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+ body {
+     line-height: 1;
+ }
+ ol, ul {
+     list-style: none;
+ }
+ blockquote, q {
+     quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+ table {
+     border-collapse: collapse;
+     
+ }
+ /* css reset ends here  */
+ @font-face {
+     font-family: 'Karla','DM Serif Display',sans-serif;
+     src: url('assets/fonts');
+ }
+
+ *{
+     box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #6A6970;
+ }
+ body p{
+     letter-spacing: -1px;
+ }
+ a{
+     text-decoration: none;
+     color:#6A6970;
+     text-transform: uppercase;
+     font-size: 20px;
+     display:inline-block;
+    
+ }
+ h1,h2,h3,h4,h5,h6{
+    font-family: 'DM Serif Display',sans-serif;
+    color:#2D2640;
+}
+h2{
+    font-size: 40px;
+    color: #2D2640; 
+}
+
+.btn{
+    padding: 12px 16px;
+    background-color:transparent;
+    border:  1px solid grey;
+    border-radius: 3px;
+    font-family: 'Karla',sans-serif;
+}
+.btn a{
+    font-weight: 500;
+}
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 8%;
+    /* background-color:red; */
+}
+hr{
+    width:150px;
+    margin: 0px;
+    border: 1px solid #fff;
+    outline: none;
+}
+/* header start here  */
+#navigation-bar {
+    width: 100%;
+    padding:10px 8%;
+}
+#navigation-bar nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: baseline;
+    font-weight: 500;
+}
+ .logo a{
+    font-family:'DM Serif Display',sans-serif;
+    color: #2D2640;
+    font-size:30px;
+    font-weight: 500;
+    text-transform: none;
+}
+
+.navigation-menus .menus{
+   margin-right: 20px ;
+}
+#navigation-bar nav .btn a{
+    font-weight: 500;
+}
+
+/*  navigation bar ends here  */
+
+
+/* home sections starts here  */
+#home-section {
+
+    background-color:#2D2640;
+    width: 100%;
+    height: 450px;
+
+}
+#home-section  article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 0 0;
+}
+#home-section  article .home-content-container {
+    width: 48%;
+    height: 400px;
+    color: #fff;
+}
+
+
+#home-section  article .home-content-container header h1{
+    font-size:60px;
+    color: #fff;
+    letter-spacing: -1px;
+    line-height:65px;
+}
+#home-section  article .home-content-container .home-description {
+
+    margin: 20px 0 30px 0;
+    word-spacing: -3px;
+    color: #9a99a1;
+    font-size: 18px;
+}
+#home-section  article .home-content-container header h1 span{
+    display: block;
+}
+#home-section  article .home-content-container .btn{
+    border-color: #fff;
+}
+#home-section  article .home-content-container .btn a {
+    color: #fff;
+}
+#home-section  article .home-image{
+    width:38%;
+    height: 400px;
+    
+}
+#home-section  article .home-image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* home section ends here  */
+
+/* about section starts here  */
+#about-section {
+    padding: 150px 8%;
+}
+
+#about-section .about-container{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#about-section .about-image{
+    width: 40%;
+    
+}
+#about-section .about-image img{
+    width: 100%;
+}
+#about-section .about-content{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-flow:column wrap;
+}
+#about-section .about-content .btn{
+    display: inline;
+}
+#about-section  .about-container .about-content .description {
+    margin: 20px 0 ;
+}
+/* about  section ends  here  */
+/* More about us section starts here  */
+#More-aboutus {
+    width: 100%;
+    height: auto;
+    padding:   0 8% 20px 8% ;
+}
+#More-aboutus hr{
+    border-color:#777;
+    margin: 0 0 30px 0;
+}
+#More-aboutus .card-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    margin: 40px 0 0 0;
+}
+#More-aboutus .card-container .card{
+    width: 350px;
+}
+#More-aboutus .card-container .card .card-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#8AB4F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#More-aboutus .card-container .card h3{
+    font-size:25px;
+    margin: 10px 0;
+}
+#More-aboutus .card-container .card p{
+    font-size: 18px;
+}
+#More-aboutus .fullwidthcard-container{
+    width:100%;
+    height: 250px;
+    background-color: #2D2640;
+    margin: 40px 0 ;
+}
+#More-aboutus .fullwidthcard-container .fullwidthcard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+#More-aboutus .fullwidthcard-container .fullwidthcard h2{
+    color: #fff;
+}
+.fullwidthcard-container .fullwidthcard h2 span{
+    display: block;
+}
+#More-aboutus .fullwidthcard-container .fullwidthcard .btn{
+    border-color:#fff;
+}
+#More-aboutus .fullwidthcard-container .fullwidthcard .btn a{
+    color: #fff;
+}
+
+/* More about us section ends  here  */
+
+/* footer starts  here  */
+footer{
+   width: 100%;
+}
+footer  .footer-container{
+    padding: 0 8%;
+}
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-content .social-icons i{
+    color: #6A6970;
+    font-size: 30px;
+    margin: 0 0 0 25px;
+ 
+}
+footer hr{
+    border-color: #6A6970;
+    width: 100%;
+}
+
+footer .footermenus{
+    text-align: center;
+    padding: 20px 0;
+}
+footer .footermenus nav a{
+    text-transform:none;
+    margin:  0 20px;
+}
+footer .copy-righttext{
+    padding: 20px 0;
+    background-color: #2D2640;
+    text-align: center;
+    color: rgb(147 147 155);
+}
+/* footer ends  here  */
